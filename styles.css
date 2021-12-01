@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Red+Hat+Display:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Myeongjo&display=swap");
+
+body {
+  margin: 0;
+  
+  font-family: "Red Hat Display", sans-serif;
+}
+
+
+
+.card{
+    
+    height: 500px;
+    width:1%;
+    margin-top: 25px;
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px 5px #c4a159;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+img{
+    height:100%;
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.germany img{
+    height:150%;
+    
+}
+.content h4{
+    color:#c4a159;
+    margin-left:10px
+}
+.content p{
+    margin-left: 10px;
+}
+
+.content button{
+    margin-left: 170px;
+    background-color:#fff;
+    box-shadow: 1px 1px 1px 1px #c4a159;
+}
+
+  /*------------------4k-----------------------------------*/
+
+  @media screen and (max-width:2570px){
+    .card{
+        width:20%;
+        height: 550px;
+        display:inline-block;
+        
+        
+    }
+}
+/*---------------------3 cards-----------------------------*/
+@media screen and (max-width:1278px) {
+    .card{
+        width:30%;
+        height:600px;
+        
+        box-shadow: 5px 5px 5px 5px #c4a159;
+        display:inline-block;
+        
+    }
+}
+ /*---------------------------2 cards----------------------*/
+ @media screen and (max-width:768px){
+    .card{
+        width:50%;
+        height:600px;
+        display:inline-block;
+        
+        
+        
+    }
+}
+/*-------------------------------1 card-------------------------*/
+@media screen and (max-width: 425px) {
+    .card {
+      width: 75%;
+      height:600px;  
+      display: inline-block;
+      margin-bottom: 20px;
+      
+    }
+   
+  }
+ 
+
+
+
