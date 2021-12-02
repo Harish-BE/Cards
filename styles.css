@@ -7,7 +7,13 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
-
+.cards{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
 
 .card{
     
@@ -48,51 +54,67 @@ img{
     box-shadow: 1px 1px 1px 1px #c4a159;
 }
 
+.content button:hover{
+    background-color: #dfd5c0;
+}
+
   /*------------------4k-----------------------------------*/
 
   @media screen and (max-width:2570px){
     .card{
         width:20%;
-        height: 550px;
+        height: 600px;
         display:inline-block;
         
-        
     }
+    
+
 }
 /*---------------------3 cards-----------------------------*/
 @media screen and (max-width:1278px) {
     .card{
         width:30%;
         height:600px;
-        
         box-shadow: 5px 5px 5px 5px #c4a159;
-        display:inline-block;
-        
     }
+
 }
  /*---------------------------2 cards----------------------*/
  @media screen and (max-width:768px){
     .card{
         width:50%;
         height:600px;
-        display:inline-block;
         
-        
-        
+    }
+    .cards{
+        flex-flow: row wrap;
     }
 }
 /*-------------------------------1 card-------------------------*/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .card {
       width: 75%;
-      height:600px;  
-      display: inline-block;
+      height:700px;  
       margin-bottom: 20px;
-      
+    }
+    .cards{
+        flex-direction: column;
     }
    
   }
  
 
+/*------------------mobile s---------------------------------*/
 
 
+@media screen and (max-width: 425px) {
+    .card {
+      width: 75%;
+      height:600px;  
+      margin-bottom: 20px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+   
+  }
